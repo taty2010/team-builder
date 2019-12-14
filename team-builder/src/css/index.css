@@ -4,7 +4,7 @@
 }
 nav {
   background-color: black;
-  width: 95%;
+  width: 90%;
   height: 150px;
   margin: auto;
   display: flex;
@@ -30,7 +30,7 @@ nav {
 }
 .body {
   text-align: center;
-  width: 95%;
+  width: 90%;
   margin: auto;
   background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(40, 66, 87, 0.3)), url('https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   background-position: center;
@@ -46,7 +46,7 @@ nav {
   margin: auto;
 }
 .teamList .person {
-  width: 30%;
+  width: 20%;
   height: auto;
   margin: 1.5%;
   background-color: #ffffff;
