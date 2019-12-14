@@ -6,7 +6,8 @@ const Form = ({addPerson, memberToEdit})=>{
     firstName:'',
     lastName:'', 
     email: '',
-    role: ''
+    role: '',
+    gender: ''
     })
 
     const handleChanges = event => {
@@ -21,7 +22,8 @@ const Form = ({addPerson, memberToEdit})=>{
         setPerson({firstName:'',
         lastName:'', 
         email: '',
-        role: ''})
+        role: '',
+        gender: ''})
     };
 
     console.log('person', person)
@@ -73,6 +75,15 @@ const Form = ({addPerson, memberToEdit})=>{
             onChange={handleChanges}
             value={person.role}
             />
+
+        <label htmlFor="gender">
+        Choose Preferred Avatar gender
+            <select id="gender" name="gender" onChange={handleChanges} value={person.gender}>
+                <option value='male'>Male</option>
+                <option value='female'>Female</option>
+                <option value='neutral'>Neutral</option>
+            </select>
+        </label>
 
         <button type="submit">Add Person</button>
     </form>
