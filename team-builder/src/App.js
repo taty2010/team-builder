@@ -5,6 +5,8 @@ import TeamMember from './Components/TeamMember'
 import Menu from './Components/Menu';
 import Form from './Components/Form'
 import avatar from './img/avatar.png'
+import mavatar from './img/mavatar.png'
+import nAvatar from './img/neutralAvatar.png'
 import Footer from './Components/Footer'
 
 function App() {
@@ -14,10 +16,14 @@ function App() {
     {
         id: 1,
         img: `${avatar}`,
+        imgM: `${mavatar}`,
+        imgN: `${nAvatar}`,
         firstName:'David',
         lastName:'Tennant', 
         email: 'doctorwho@gmail.com',
-        role: 'Time Traveler'
+        role: 'Time Traveler',
+        gender: 'Male'
+
     }
   ]);
 
@@ -25,10 +31,13 @@ function App() {
     const newPerson ={
       id: Date.now(),
       img: `${avatar}`,
+      imgM: `${mavatar}`,
+      imgN: `${nAvatar}`,
       firstName: newP.firstName,
       lastName: newP.lastName,
       email: newP.email,
-      role: newP.role
+      role: newP.role,
+      gender: newP.gender
     };
     const newPersonCollection = [...person, newPerson]
     setPerson(newPersonCollection)
